@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Be my Valentine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cartita inicial -->
+  <div id="letter" class="letter fade-in">
+    <div class="letter-content">
+      <h2>Querida...</h2>
+      <p>En este día especial quiero preguntarte algo muy importante 💖</p>
+      <button id="openChoices">Abrir</button>
+    </div>
+  </div>
+
+  <!-- Fondo de fotos (oculto al inicio) -->
+  <div class="photo-background" id="photoBackground">
+    <img src="images/foto1.jpeg" class="area1">
+    <img src="images/foto2.jpeg" class="area2">
+    <img src="images/foto3.jpeg" class="area3">
+    <img src="images/foto4.jpeg" class="area4">
+    <img src="images/foto5.jpeg" class="area5">
+    <img src="images/foto6.jpeg" class="area6">
+    <img src="images/foto7.jpeg" class="area7">
+    <img src="images/foto8.jpeg" class="area8">
+    <img src="images/foto9.jpeg" class="area9">
+  </div>
+
+  <!-- Contenido centrado -->
+  <div class="center-content" style="display:none;">
+    <h1>Be my Valentine <span class="hearts">❤️💖💕</span></h1>
+
+    <div class="buttons">
+      <button id="noBtn">No</button>
+      <button id="yesBtn">Sí</button>
+    </div>
+
+    <div id="noMessage" class="no-message">
+    Ya no tienes opción 😌
+    </div>
+
+  </div>
+
+  <!-- Mensaje final -->
+  <div id="loveMessage" class="love-message">
+    Siempre supe que querías 😇
+  </div>
+  <!-- Cancion -->
+  <audio id="loveSong" src="music/lumineers.mp3"></audio>
+  <audio id="grabSound" src="music/grab.mp3" preload="auto"></audio>
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+
+  <div class="vignette"></div>
+</body>
+</html>
